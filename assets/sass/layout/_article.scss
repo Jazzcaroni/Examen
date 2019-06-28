@@ -1,0 +1,76 @@
+.contenedor__titulo-pp {
+     
+        text-align: center;
+        color: $white;
+    
+ }
+.contenedor__precios {
+    display: flex;
+    flex-direction: row;
+    padding: .5rem 3rem;
+    justify-content: center;
+}
+.contenedor__precios__card1 {
+  max-width: 22rem;
+  min-width: 22rem;
+  min-height: 28rem;
+  background-color: $white;
+  box-shadow: 1px 1px 2px $raising-black;
+  margin: 2rem 1.5rem;
+  padding: 1.5rem 2.4rem .5rem 2.4rem;
+  h3 {
+    font-size: $x-large;
+  }
+  ul {
+      margin-bottom: 9.3rem;
+  }
+}
+.contenedor__precios__card2 {
+    max-width: 22rem;
+    max-height: 28rem;
+    background-color: $white;
+    box-shadow: 1px 1px 2px $raising-black;
+    padding: 1.5rem 2.2rem .5rem 2.2rem;
+    margin: 2rem 1.5rem;
+    h3 {
+        font-size: $x-large;
+      }
+      ul {
+        margin-bottom: 1.5rem;
+    }
+  }
+  
+@media only screen and (max-width: 768px) {
+    .contenedor__precios {
+        display: flex;
+        flex-direction: column;
+        padding:  .5rem .5rem .5rem 1.3rem;
+        justify-content: center;
+    }
+    .contenedor__precios__card1 {
+        max-width: 17.1rem;
+        min-width: 17.1rem;
+        max-height: 30.3rem;
+        background-color: $white;
+        box-shadow: 1px 1px 2px $raising-black;
+        margin: 2rem 1.5rem;
+        padding: 1rem;
+        h3 {
+            font-size: $x-large;
+          }
+      }
+      .contenedor__precios__card2 {
+          width: 17.1rem;
+          max-height: 38rem;
+          background-color: $white;
+          box-shadow: 1px 1px 2px $raising-black;
+          padding: 1rem;
+          margin: 3rem 1.5rem 3rem 1.5rem;
+          h3 {
+            font-size: $x-large;
+          }
+          ul {
+            margin-bottom: 0rem;
+        }
+        }
+}
