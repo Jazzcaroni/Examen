@@ -1,0 +1,13 @@
+@mixin set-container {
+padding: 5px;
+}
+
+.contenedor{
+@include set-container();
+margin: 0 auto;
+width: 90vw;
+}
+
+.contenedor-fluid{
+    width: 100vw;
+}

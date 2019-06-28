@@ -1,12 +1,6 @@
 
 @import
-  'vendors/bootstrap-4.3.1/bootstrap';
-
-@import
-  'abstracts/variables',
-  'abstracts/functions',
-  'abstracts/mixins',
-  'abstracts/placeholders';
+  'abstracts/variables';
 
 @import
 	'base/base',
@@ -22,10 +16,7 @@
   'layout/section';
 
 @import
-  'components/buttons',
-  'components/carousel',
-  'components/cover',
-  'components/dropdown';
+  'components/buttons';
 
 @import
   'pages/home',

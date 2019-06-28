@@ -8,13 +8,13 @@
 .contenedor__caracteristicas {
     display: flex;
     flex-direction: row;
-    padding: 2rem 16rem 16rem 16rem;
+    padding: 3% 16% 16% 20%;
 }
 .contenedor__caracteristicas__texto {
-    padding: 2rem 6rem 2rem 2rem;
+  padding: 2% 10% 5% 7%;
 }
 .contenedor__caracteristicas__graficos {
-    padding: 1rem 2rem 2rem 8rem;
+    padding: 2% 2% 2% 8%;
 }
 #barras {
     animation: opacidad 3s infinite;
@@ -30,6 +30,7 @@
 @media only screen and (max-width: 768px) {
     .contenedor__texto {
         text-align: center;
+        margin: 33% 0% 0% 0;
     }
     .contenedor__caracteristicas {
     display: flex;
@@ -41,7 +42,7 @@
   
 }
 .contenedor__caracteristicas__graficos {
-    padding: 3rem 0rem;
+    padding: 11% 0;
 }
 #barras {
    animation: opacidad 2s infinite;
