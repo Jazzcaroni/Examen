@@ -1,13 +1,4 @@
 /* Esquema de Colores */
-body {
-  margin-bottom: 6rem;
-  background-image: url(../images/bg-price.png);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: center;
-  background-position: 0rem 84.3rem;
-}
-
 @media screen and (min-width: 768px) and (max-width: 1900px) {
   body {
     margin-bottom: 6rem;
@@ -175,11 +166,6 @@ h6 {
   padding: 0;
 }
 
-.img-banner2 {
-  width: 100%;
-  padding: 0;
-}
-
 .contenedor__header {
   padding: 0;
 }
@@ -194,12 +180,17 @@ h6 {
   padding-bottom: 1rem;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1700px) {
+@media screen and (min-width: 768px) and (max-width: 1900px) {
   .contenedor__header__imagen2 {
     display: none;
   }
 }
 @media only screen and (max-width: 768px) {
+  .img-banner2 {
+    width: 100%;
+    padding: 0;
+  }
+
   .contenedor__header {
     padding: 0;
   }
@@ -482,7 +473,7 @@ ul li {
 }
 
 .button3 {
-  padding: 3% 33%;
+  padding: 3% 32%;
   cursor: pointer;
   font-family: "Raleway", sans-serif;
   font-size: 14px;
@@ -502,7 +493,7 @@ ul li {
 }
 
 .button4 {
-  padding: 3% 27%;
+  padding: 3% 26%;
   cursor: pointer;
   font-family: "Raleway", sans-serif;
   font-size: 14px;
