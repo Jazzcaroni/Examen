@@ -1,59 +1,67 @@
-.contenedor__titulo {
-   text-align: center;
-   h2 {
-    color: $raising-black;
-   }
- 
-}
-.contenedor__caracteristicas {
-    display: flex;
-    flex-direction: row;
-    padding: 3% 16% 16% 20%;
-}
-.contenedor__caracteristicas__texto {
-  padding: 2% 10% 5% 7%;
-}
-.contenedor__caracteristicas__graficos {
-    padding: 2% 2% 2% 8%;
-}
-#barras {
-    animation: opacidad 3s infinite;
- }
- @keyframes opacidad { 
-     0% {
-       opacity: 0;
+  .contenedor__titulo {
+     text-align: center;
+     h2 {
+      color: $raising-black;
      }
-     100% {
-       opacity: 1;
-     }
-   }
-@media only screen and (max-width: 768px) {
-    .contenedor__texto {
-        text-align: center;
-        margin: 33% 0% 0% 0;
-    }
-    .contenedor__caracteristicas {
-    display: flex;
-    flex-direction: column;
-    padding: 2rem 2rem 16rem 2rem;
-}
-.contenedor__caracteristicas__texto {
-    padding: .5rem;
-  
-}
-.contenedor__caracteristicas__graficos {
-    padding: 11% 0;
-}
-#barras {
-   animation: opacidad 2s infinite;
-}
-@keyframes opacidad { 
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
+
+  }
+  .contenedor__caracteristicas {
+      display: flex;
+      flex-direction: row;
+      padding: 3% 16% 16% 20%;
+  }
+  .contenedor__caracteristicas__texto {
+    padding: 2% 10% 5% 7%;
+    p {
+      line-height: 2rem;
     }
   }
 
-}
+  .contenedor__caracteristicas__graficos {
+      padding: 2% 2% 2% 8%;
+  }
+  #barras {
+      animation: opacidad 3s infinite;
+   }
+   @keyframes opacidad {
+       0% {
+         opacity: 0;
+       }
+       100% {
+         opacity: 1;
+       }
+     }
+  @media only screen and (max-width: 768px) {
+
+    .contenedor__titulo {
+      margin-top: 21%;
+    }
+      .contenedor__texto {
+          text-align: center;
+          margin: 33% 0% 0% 0;
+      }
+      .contenedor__caracteristicas {
+      display: flex;
+      flex-direction: column;
+      padding: 8% 7% 100% 7%;
+  }
+  .contenedor__caracteristicas__texto {
+      padding: .5rem;
+
+  }
+  .contenedor__caracteristicas__graficos {
+      padding: 11% 0;
+  }
+  #barras {
+     animation: opacidad 2s infinite;
+  }
+  @keyframes opacidad {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+  }

@@ -1,76 +1,105 @@
-.contenedor__titulo-pp {
-     
-        text-align: center;
-        color: $white;
-    
- }
-.contenedor__precios {
-    display: flex;
-    flex-direction: row;
-    padding: .5rem 3rem;
-    justify-content: center;
-}
-.contenedor__precios__card1 {
-  max-width: 22rem;
-  min-width: 22rem;
-  min-height: 28rem;
-  background-color: $white;
-  box-shadow: 1px 1px 2px $raising-black;
-  margin: 2rem 1.5rem;
-  padding: 1.5rem 2.4rem .5rem 2.4rem;
-  h3 {
-    font-size: $x-large;
-  }
-  ul {
-      margin-bottom: 9.3rem;
-  }
-}
-.contenedor__precios__card2 {
-    max-width: 22rem;
-    max-height: 28rem;
-    background-color: $white;
-    box-shadow: 1px 1px 2px $raising-black;
-    padding: 1.5rem 2.2rem .5rem 2.2rem;
-    margin: 2rem 1.5rem;
-    h3 {
-        font-size: $x-large;
-      }
-      ul {
-        margin-bottom: 1.5rem;
-    }
-  }
-  
-@media only screen and (max-width: 768px) {
-    .contenedor__precios {
-        display: flex;
-        flex-direction: column;
-        padding:  .5rem .5rem .5rem 1.3rem;
-        justify-content: center;
-    }
-    .contenedor__precios__card1 {
-        max-width: 17.1rem;
-        min-width: 17.1rem;
-        max-height: 30.3rem;
-        background-color: $white;
-        box-shadow: 1px 1px 2px $raising-black;
-        margin: 2rem 1.5rem;
-        padding: 1rem;
-        h3 {
-            font-size: $x-large;
-          }
-      }
-      .contenedor__precios__card2 {
-          width: 17.1rem;
-          max-height: 38rem;
-          background-color: $white;
-          box-shadow: 1px 1px 2px $raising-black;
-          padding: 1rem;
-          margin: 3rem 1.5rem 3rem 1.5rem;
-          h3 {
-            font-size: $x-large;
-          }
-          ul {
-            margin-bottom: 0rem;
+    .contenedor__titulo-pp {
+            text-align: center;
+            color: $white;
+     }
+       @media screen and (min-width:768px) and (max-width:1900px){
+         .contenedor__precios {
+             display: flex;
+             flex-direction: row;
+             padding: 1% 2%;
+             justify-content: center;
+         }
+         .contenedor__precios__card1 {
+           max-width: 20vw;
+           min-width: 20vw;
+
+           background-color: $white;
+           margin: 2% 2%;
+           padding: 2% 2% 3% 2%;
+           h3 {
+             font-size: $x-large;
+           }
+           ul {
+               margin-bottom: 64%;
+               padding-left: 6%;
+               li {
+                     display: list-item;
+               }
+           }
+           &:hover {
+             box-shadow: 2px 2px 6px $raising-black;
+           }
+         }
+
+         .contenedor__precios__card2 {
+             max-width: 20vw;
+
+             background-color: $white;
+             margin: 2% 2%;
+             padding: 2% 2% 3% 2%;
+             h3 {
+                 font-size: $x-large;
+               }
+               ul {
+                 margin-bottom: 8%;
+                 padding-left: 6%;
+
+               li {
+                     display: list-item;
+               }
+             }
+             &:hover {
+               box-shadow: 2px 2px 6px $raising-black;
+             }
+           }
+
+       }
+
+    @media only screen and (max-width: 768px) {
+        .contenedor__precios {
+            display: flex;
+            flex-direction: column;
+            padding: 1% 7% 1% 7%;
+            justify-content: center;
         }
-        }
-}
+        .contenedor__precios__card1 {
+            max-width: 73.4vw;
+            min-width: 73.4vw;
+            background-color: $white;
+            margin: 9% 7%;
+            padding: 5% 5% 12% 5%;
+            h3 {
+                font-size: $x-large;
+              }
+              ul {
+                margin-bottom: 60%;
+                padding-left: 10%;
+                li {
+                      display: list-item;
+                }
+            }
+            &:hover {
+              box-shadow: 2px 2px 6px $raising-black;
+            }
+          }
+          .contenedor__precios__card2 {
+              width: 73.4vw;
+              background-color: $white;
+              padding: 5% 5% 12% 5%;
+              margin: 13% 10% 19% 8%;
+              h3 {
+                font-size: $x-large;
+              }
+              ul {
+                margin-bottom: 10%;
+                padding-left: 13%;
+                li {
+                      display: list-item;
+
+                }
+            }
+            &:hover {
+              box-shadow: 2px 2px 6px $raising-black;
+            }
+            }
+    }

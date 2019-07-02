@@ -8,6 +8,16 @@ body {
   background-position: 0rem 84.3rem;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1900px) {
+  body {
+    margin-bottom: 6rem;
+    background-image: url(../images/bg-price.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    background-position: 0 100%;
+  }
+}
 @media only screen and (max-width: 768px) {
   body {
     background-image: url(../images/bg-price2.svg);
@@ -84,7 +94,7 @@ h2 {
 
 h3 {
   font-family: "Raleway", sans-serif;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 700;
 }
 
@@ -134,7 +144,7 @@ h6 {
   justify-items: end;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1700px) {
+@media screen and (min-width: 768px) and (max-width: 1900px) {
   .contenedor__navigacion__bars {
     display: none;
   }
@@ -165,6 +175,11 @@ h6 {
   padding: 0;
 }
 
+.img-banner2 {
+  width: 100%;
+  padding: 0;
+}
+
 .contenedor__header {
   padding: 0;
 }
@@ -179,9 +194,18 @@ h6 {
   padding-bottom: 1rem;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1700px) {
+  .contenedor__header__imagen2 {
+    display: none;
+  }
+}
 @media only screen and (max-width: 768px) {
   .contenedor__header {
     padding: 0;
+  }
+
+  .contenedor__header__imagen {
+    display: none;
   }
 
   .contenedor__header__texto {
@@ -192,6 +216,9 @@ h6 {
   }
   .contenedor__header__texto h1 {
     padding-bottom: 6%;
+  }
+  .contenedor__header__texto p {
+    line-height: 2rem;
   }
 }
 .contenedor__pie {
@@ -208,18 +235,24 @@ ul li {
   justify-content: center;
 }
 
-.contenedor__pie__write {
-  display: flex;
-  justify-content: flex-end;
-}
+@media screen and (min-width: 768px) and (max-width: 1900px) {
+  ul li {
+    padding: 0.5rem;
+  }
 
+  .contenedor__pie__write {
+    display: flex;
+    justify-content: flex-end;
+    padding-left: 76%;
+  }
+}
 @media only screen and (max-width: 768px) {
   .contenedor__pie {
     background-color: #221d23;
     color: #fff;
     display: flex;
     flex-direction: column;
-    padding: 2rem 1rem;
+    padding: 4% 3%;
   }
 
   .contenedor__pie__menu {
@@ -237,78 +270,102 @@ ul li {
   color: #fff;
 }
 
-.contenedor__precios {
-  display: flex;
-  flex-direction: row;
-  padding: 0.5rem 3rem;
-  justify-content: center;
-}
-
-.contenedor__precios__card1 {
-  max-width: 22rem;
-  min-width: 22rem;
-  min-height: 28rem;
-  background-color: #fff;
-  box-shadow: 1px 1px 2px #221d23;
-  margin: 2rem 1.5rem;
-  padding: 1.5rem 2.4rem 0.5rem 2.4rem;
-}
-.contenedor__precios__card1 h3 {
-  font-size: 30px;
-}
-.contenedor__precios__card1 ul {
-  margin-bottom: 9.3rem;
-}
-
-.contenedor__precios__card2 {
-  max-width: 22rem;
-  max-height: 28rem;
-  background-color: #fff;
-  box-shadow: 1px 1px 2px #221d23;
-  padding: 1.5rem 2.2rem 0.5rem 2.2rem;
-  margin: 2rem 1.5rem;
-}
-.contenedor__precios__card2 h3 {
-  font-size: 30px;
-}
-.contenedor__precios__card2 ul {
-  margin-bottom: 1.5rem;
-}
-
-@media only screen and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1900px) {
   .contenedor__precios {
     display: flex;
-    flex-direction: column;
-    padding: 0.5rem 0.5rem 0.5rem 1.3rem;
+    flex-direction: row;
+    padding: 1% 2%;
     justify-content: center;
   }
 
   .contenedor__precios__card1 {
-    max-width: 17.1rem;
-    min-width: 17.1rem;
-    max-height: 30.3rem;
+    max-width: 20vw;
+    min-width: 20vw;
     background-color: #fff;
-    box-shadow: 1px 1px 2px #221d23;
-    margin: 2rem 1.5rem;
-    padding: 1rem;
+    margin: 2% 2%;
+    padding: 2% 2% 3% 2%;
   }
   .contenedor__precios__card1 h3 {
     font-size: 30px;
   }
+  .contenedor__precios__card1 ul {
+    margin-bottom: 64%;
+    padding-left: 6%;
+  }
+  .contenedor__precios__card1 ul li {
+    display: list-item;
+  }
+  .contenedor__precios__card1:hover {
+    box-shadow: 2px 2px 6px #221d23;
+  }
 
   .contenedor__precios__card2 {
-    width: 17.1rem;
-    max-height: 38rem;
+    max-width: 20vw;
     background-color: #fff;
-    box-shadow: 1px 1px 2px #221d23;
-    padding: 1rem;
-    margin: 3rem 1.5rem 3rem 1.5rem;
+    margin: 2% 2%;
+    padding: 2% 2% 3% 2%;
   }
   .contenedor__precios__card2 h3 {
     font-size: 30px;
   }
   .contenedor__precios__card2 ul {
-    margin-bottom: 0rem;
+    margin-bottom: 8%;
+    padding-left: 6%;
+  }
+  .contenedor__precios__card2 ul li {
+    display: list-item;
+  }
+  .contenedor__precios__card2:hover {
+    box-shadow: 2px 2px 6px #221d23;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .contenedor__precios {
+    display: flex;
+    flex-direction: column;
+    padding: 1% 7% 1% 7%;
+    justify-content: center;
+  }
+
+  .contenedor__precios__card1 {
+    max-width: 73.4vw;
+    min-width: 73.4vw;
+    background-color: #fff;
+    margin: 9% 7%;
+    padding: 5% 5% 12% 5%;
+  }
+  .contenedor__precios__card1 h3 {
+    font-size: 30px;
+  }
+  .contenedor__precios__card1 ul {
+    margin-bottom: 60%;
+    padding-left: 10%;
+  }
+  .contenedor__precios__card1 ul li {
+    display: list-item;
+  }
+  .contenedor__precios__card1:hover {
+    box-shadow: 2px 2px 6px #221d23;
+  }
+
+  .contenedor__precios__card2 {
+    width: 73.4vw;
+    background-color: #fff;
+    padding: 5% 5% 12% 5%;
+    margin: 13% 10% 19% 8%;
+  }
+  .contenedor__precios__card2 h3 {
+    font-size: 30px;
+  }
+  .contenedor__precios__card2 ul {
+    margin-bottom: 10%;
+    padding-left: 13%;
+  }
+  .contenedor__precios__card2 ul li {
+    display: list-item;
+  }
+  .contenedor__precios__card2:hover {
+    box-shadow: 2px 2px 6px #221d23;
   }
 }
 .contenedor__titulo {
@@ -326,6 +383,9 @@ ul li {
 
 .contenedor__caracteristicas__texto {
   padding: 2% 10% 5% 7%;
+}
+.contenedor__caracteristicas__texto p {
+  line-height: 2rem;
 }
 
 .contenedor__caracteristicas__graficos {
@@ -345,6 +405,10 @@ ul li {
   }
 }
 @media only screen and (max-width: 768px) {
+  .contenedor__titulo {
+    margin-top: 21%;
+  }
+
   .contenedor__texto {
     text-align: center;
     margin: 33% 0% 0% 0;
@@ -353,7 +417,7 @@ ul li {
   .contenedor__caracteristicas {
     display: flex;
     flex-direction: column;
-    padding: 2rem 2rem 16rem 2rem;
+    padding: 8% 7% 100% 7%;
   }
 
   .contenedor__caracteristicas__texto {
@@ -438,7 +502,7 @@ ul li {
 }
 
 .button4 {
-  padding: 3% 28%;
+  padding: 3% 27%;
   cursor: pointer;
   font-family: "Raleway", sans-serif;
   font-size: 14px;
