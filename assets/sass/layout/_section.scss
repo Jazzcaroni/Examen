@@ -20,17 +20,7 @@
   .contenedor__caracteristicas__graficos {
       padding: 2% 2% 2% 8%;
   }
-  #barras {
-      animation: opacidad 3s infinite;
-   }
-   @keyframes opacidad {
-       0% {
-         opacity: 0;
-       }
-       100% {
-         opacity: 1;
-       }
-     }
+  
   @media only screen and (max-width: 768px) {
 
     .contenedor__titulo {
@@ -52,16 +42,6 @@
   .contenedor__caracteristicas__graficos {
       padding: 11% 0;
   }
-  #barras {
-     animation: opacidad 2s infinite;
-  }
-  @keyframes opacidad {
-      0% {
-        opacity: 0;
-      }
-      100% {
-        opacity: 1;
-      }
-    }
+
 
   }
