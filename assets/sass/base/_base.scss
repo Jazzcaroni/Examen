@@ -8,6 +8,17 @@
         background-position: center;
         background-position: 0 100%;
       }
+      #barras {
+        animation: opacidad 3s infinite;
+     }
+     @keyframes opacidad {
+         0% {
+           opacity: 0;
+         }
+         100% {
+           opacity: 1;
+         }
+       }
   }
 
     @media only screen and (max-width: 768px) {
@@ -17,5 +28,15 @@
           background-size: 100%;
           background-position: bottom;
         }
-
+        #barras {
+          animation: opacidad 2s infinite;
+       }
+       @keyframes opacidad {
+           0% {
+             opacity: 0;
+           }
+           100% {
+             opacity: 1;
+           }
+         }
     }
